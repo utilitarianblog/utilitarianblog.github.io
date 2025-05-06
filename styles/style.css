@@ -95,6 +95,61 @@ footer {
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
+/* Basic nav styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #1abc9c;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+/* Toggle button - hidden by default */
+.toggle-button {
+  display: none;
+  font-size: 1.5em;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .toggle-button {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #16a085;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 180px;
+    padding: 1em;
+    border-radius: 8px;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
 
 .service-card h3 {
   margin-bottom: 0.8em;
