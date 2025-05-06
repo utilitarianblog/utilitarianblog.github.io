@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TechSage Journal</title>
   <link rel="stylesheet" href="styles/style.css" />
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Header and Navigation -->
   <header>
-    <nav>
+    <nav class="navbar">
       <img src="logo.png" alt="TechSage Logo" class="logo" />
-      <ul class="nav-links">
+      <button class="toggle-button" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="about.html">About</a></li>
@@ -19,16 +22,45 @@
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <main>
     <section class="hero">
       <h1>Welcome to TechSage Journal</h1>
-      <p>Your source for tech tutorials, tips, and guides.</p>
+      <p>Explore tips, tutorials, and insights in the world of technology, development, design, and digital transformation.</p>
       <button onclick="subscribeAlert()">Subscribe</button>
+    </section>
+
+    <!-- What We Do -->
+    <section class="what-we-do">
+      <h2>What We Do</h2>
+      <div class="services">
+        <div class="service-card">
+          <h3>Web Development</h3>
+          <p>We publish practical guides and examples on modern frontend and backend development.</p>
+        </div>
+        <div class="service-card">
+          <h3>Tech News</h3>
+          <p>Stay updated with the latest trends, gadgets, software updates, and industry news.</p>
+        </div>
+        <div class="service-card">
+          <h3>Graphics & Design</h3>
+          <p>Explore design principles, branding tips, and creative project showcases from professionals.</p>
+        </div>
+      </div>
     </section>
   </main>
 
+  <!-- Footer with Social Media -->
   <footer>
-    <p>&copy; 2025 TechSage Journal. All rights reserved.</p>
+    <div class="footer-content">
+      <p>&copy; 2025 TechSage Journal. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>
