@@ -162,4 +162,62 @@ footer {
   color: #555;
   line-height: 1.6;
 }
+/* Desktop view */
+.nav-wrapper {
+  display: flex;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Toggle button hidden by default */
+.toggle-button {
+  display: none;
+  font-size: 1.8em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .toggle-button {
+    display: block;
+  }
+
+  .nav-wrapper {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #1abc9c;
+    width: 180px;
+    padding: 1em;
+    border-radius: 8px;
+    z-index: 1000;
+  }
+
+  .nav-wrapper.active {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .nav-links li {
+    text-align: left;
+  }
+}
 
