@@ -56,9 +56,9 @@ footer {
   color: white;
   margin-top: 2em;
 }
-.social-links a {
+.social-link a {
   text-align: center;
-  padding: 1em;
+  padding: 1px;
   background: #2c3e50;
   color: white;
   text-decoration: none;
